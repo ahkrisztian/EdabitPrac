@@ -14,7 +14,7 @@ namespace edabit.Schwer
         //LcmOfArray(new int[] { 13, 6, 17, 18, 19, 20, 37 }) ➞ 27965340
         //LcmOfArray(new int[] { 44, 64, 12, 17, 65 }) ➞ 2333760
 
-        public static string LCM(params int[] integers)
+        public static int LCM(params int[] integers)
         {
             int defaultvalue = 0;
             var maxInteger = integers.Max();
@@ -32,11 +32,13 @@ namespace edabit.Schwer
                 }
                 if (IsMultiple)
                 {
-                   return $"The Least Common Multiple of {String.Join(",", integers)} is {multiple}";
+                    //return $"The Least Common Multiple of {String.Join(",", integers)} is {multiple}";
+
+                    return multiple;
                 }
             }
 
-            return $"{defaultvalue}";
+            return defaultvalue;
 
         }
 

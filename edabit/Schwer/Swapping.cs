@@ -10,6 +10,8 @@ namespace edabit.Schwer
         //Create a function that returns the letter position that the ball is at, once I finish swapping the cups.The swaps will be given to you as an array.
 
         //cupSwapping(["AB", "CA", "AB"]) ➞ "C"
+        //cupSwapping(["AC", "CA", "CA", "AC"]) ➞ "B"
+        //cupSwapping(["BA", "AC", "CA", "BC"]) ➞ "A"
 
         // Ball begins at position B.
         // Cups A and B swap, so the ball is at position A.
